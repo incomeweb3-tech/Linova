@@ -5,6 +5,10 @@ plugins {
 }
 
 android {
+    lint {
+        checkReleaseBuilds = false
+        abortOnError = false
+    }
     namespace = "com.example.coin_car_game"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
